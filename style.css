@@ -10,12 +10,13 @@
 h1,
 .font-weight-bold {
     font-weight: 700 !important;
-    color: white !important;
+    
     
 }
 h2,
 .font-weight-bold {
     font-weight: 700 !important;
+    color: white !important;
     
 }
 
