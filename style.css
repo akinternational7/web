@@ -11,12 +11,14 @@ h1,
 h2,
 .font-weight-bold {
     font-weight: 700 !important;
+    color: white !important;
 }
 
 h3,
 h4,
 .font-weight-semi-bold {
     font-weight: 600 !important;
+    color: white !important;
 }
 
 h5,
