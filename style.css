@@ -329,7 +329,7 @@ li a:hover {
     text-shadow: 0 0 5px #aaa;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .center-text h1 {
         font-size: 1.8em;
     }
