@@ -1,39 +1,110 @@
-# Privacy Policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy - ColorDrop Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fafaff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 680px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(80, 92, 196, 0.08), 0 0.5px 2px rgba(80, 92, 196, 0.05);
+      padding: 36px 32px;
+    }
+    h1 {
+      color: #3a4cff;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      color: #333;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin: 0.6em 0 1.1em 0;
+      line-height: 1.7;
+    }
+    ul {
+      padding-left: 1.4em;
+    }
+    .contact {
+      background: #f2f5ff;
+      padding: 18px;
+      border-radius: 8px;
+      margin-top: 1em;
+      font-size: 1.05em;
+    }
+    .date {
+      color: #7c7c7c;
+      font-size: 0.98em;
+      margin-bottom: 1.6em;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 18px 4vw; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="date">Last updated: May 30, 2025</div>
+    <p>
+      Thank you for choosing to play <b>ColorDrop Challenge</b> (the "App"). Your privacy is important to us.
+      This Privacy Policy explains how we collect, use, and protect your information when you use this App.
+    </p>
 
-_Last updated: May 30, 2025_
+    <h2>1. Information We Collect</h2>
+    <p>
+      <b>ColorDrop Challenge</b> is designed for fun and does <b>not collect any personal information</b> from users.
+      The App does <b>not require registration</b>, does <b>not ask for your name, email, or any contact details</b>,
+      and does <b>not access your device data</b>, such as contacts, photos, or location.
+    </p>
+    <h3>1.1 Usage Data</h3>
+    <p>
+      The App does <b>not collect or store any usage data</b> or analytics.
+      All gameplay data (such as scores or progress) is stored <b>locally on your device</b>
+      and is not transmitted to any servers.
+    </p>
 
-Thank you for choosing to play **ColorDrop Challenge** (the "App"). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use this App.
+    <h2>2. How We Use Information</h2>
+    <p>
+      Since we do not collect any personal or usage data, we do not use, share, or sell your information to any third parties.
+    </p>
 
-## 1. Information We Collect
+    <h2>3. Children’s Privacy</h2>
+    <p>
+      The App is suitable for all ages and does not knowingly collect any personal information from children under the age of 13 or from any user.
+    </p>
 
-**ColorDrop Challenge** is designed for fun and does **not collect any personal information** from users. The App does **not require registration**, does **not ask for your name, email, or any contact details**, and does **not access your device data**, such as contacts, photos, or location.
+    <h2>4. Security</h2>
+    <p>
+      While no data is collected or transmitted, we are committed to providing a safe and secure game environment.
+    </p>
 
-### 1.1 Usage Data
+    <h2>5. Changes to this Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any updates will be posted within the App or in the app store listing.
+      Please review this policy periodically.
+    </p>
 
-The App does **not collect or store any usage data** or analytics. All gameplay data (such as scores or progress) is stored **locally on your device** and is not transmitted to any servers.
+    <h2>6. Contact Us</h2>
+    <div class="contact">
+      If you have any questions or concerns about our privacy policy, please contact us at:<br>
+      <b>Email:</b> <a href="mailto:akinternational7@gmail.com">akinternational7@gmail.com</a>
+    </div>
 
-## 2. How We Use Information
-
-Since we do not collect any personal or usage data, we do not use, share, or sell your information to any third parties.
-
-## 3. Children’s Privacy
-
-The App is suitable for all ages and does not knowingly collect any personal information from children under the age of 13 or from any user.
-
-## 4. Security
-
-While no data is collected or transmitted, we are committed to providing a safe and secure game environment.
-
-## 5. Changes to this Privacy Policy
-
-We may update this Privacy Policy from time to time. Any updates will be posted within the App or in the app store listing. Please review this policy periodically.
-
-## 6. Contact Us
-
-If you have any questions or concerns about our privacy policy, please contact us at:
-
-**Email:** akinternational7@gmail.com
-
----
-
-_By using ColorDrop Challenge, you confirm that you have read and understood this Privacy Policy._
+    <p style="margin-top:2em; color:#4c4c4c; font-size:1em;">
+      By using ColorDrop Challenge, you confirm that you have read and understood this Privacy Policy.
+    </p>
+  </div>
+</body>
+</html>
