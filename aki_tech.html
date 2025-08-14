@@ -2,529 +2,226 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>AK International</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- Favicon -->
-    <link href="img/only logo.png" rel="icon">
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com ">
-    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css " rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons @1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <title>AKI Tech | AK International</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-<div>
-  <!-- Topbar Start -->
-    <div class="container-fluid bg-secondary ps-5 pe-0 d-block" style="margin-bottom: 5px;">
-        <div class="row gx-0">
-            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
-                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AK International</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="aki_tech.html">AKI Tech</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+        <div>
+            <img src="company-logo.png" alt="AK International Logo" class="company-logo mb-3" style="max-width:180px;display:block;margin:0 auto 20px auto;">
+            <h1>Welcome to AKI Tech</h1>
+            <p>Your Digital Business Solution</p>
+            <a href="mailto:info@akint.co.in" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">About AKI Tech</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>AKI Tech is the technology and innovation division of AK International, delivering cutting-edge solutions to empower your business in the digital age. We are your strategic partner in digital transformation, offering web development, hosting, email solutions, hardware, and more.</p>
+                    <ul>
+                        <li>Business Automation</li>
+                        <li>Cloud & Web Solutions</li>
+                        <li>Data Analytics & AI</li>
+                        <li>IT Consulting</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Tech Innovation">
                 </div>
             </div>
-            <div class="col-md-6 text-center text-lg-end">
-                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
-                    <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@akint.co.in</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-window fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Web Solutions</h5>
+                        <p class="card-text">From crafting stunning websites to seamless hosting solutions, we offer end-to-end solutions at affordable prices.</p>
                     </div>
-                    <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+91 9674304008</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-envelope fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Email Solution</h5>
+                        <p class="card-text">Get professional email addresses on budget-friendly platforms. We handle hosting and maintenance so you can focus on your business.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-cpu fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Web Application Solutions</h5>
+                        <p class="card-text">From employee management to equipment maintenance and attendance tracking, our tailored solutions optimize efficiency for your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-android2 fs-1 text-success"></i></div>
+                        <h5 class="card-title">Android App Development</h5>
+                        <p class="card-text">We design and develop custom Android apps to help your business reach mobile users and streamline operations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-hdd-network fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Hardware Integrity Solutions</h5>
+                        <p class="card-text">From supply to seamless installation, we provide hardware and network components to bolster your infrastructure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-person-badge fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Identity Solutions</h5>
+                        <p class="card-text">Custom business cards and employee identity cards tailored to your brand. Stand out with professional designs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 mb-4">
+                        <div class="text-center mb-3"><i class="bi bi-bar-chart-line fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Finance Solutions</h5>
+                        <p class="card-text">From budgeting to strategic financial planning, AK International provides comprehensive finance solutions tailored to your needs.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+    </section>
 
-  <!-- Navbar -->
-    <div class="nav">
-        <div class="img">
-            <img height="100px" width="75px" style="padding-top: 20px; margin-left: 20px;" src="logo.png" alt="logo">
-        </div>
-      
-    </div>
-
-
-     <div class="center-text">
-        <h1>AK INTERNATIONAL</h1>
-        <p>Your Digital Business Solution</p>
-    </div>
-
-     <!-- Starfield Canvas -->
-    <canvas id="starfield"></canvas>
-
-    <!-- Centered Text -->
-   
-
-
-    <!-- About Start -->
-
-    <!-- About End -->
-    
-
-    <!-- Services Start -->
-    <div class="container-fluid pt-6 px-5">
-        
- <div class="content">
-    <div class="container-fluid bg-secondary p-0">
-        <div class="row g-0">
-            <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Welcome To AK International <span class="text-primary">Your Success, Our Mission</span></h1>
-                <h4 class="text-primary mb-4">Welcome to AK International, where innovation meets ingenuity, and your business aspirations.</h4>
-                <p class="mb-4">At AK International, we're not just another business solution company – we're your strategic partner in navigating the ever-evolving landscape of digital transformation. With a relentless passion for innovation and a commitment to excellence, we deliver comprehensive solutions tailored to elevate your enterprise to new heights.</p>
-                <a href="" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get A Call</a>
-            </div>
-            <div class="col-lg-6">
-                <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
-                    <div class="d-flex text-white mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-tie fs-4"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h3>Your Success, Our Mission</h3>
-                            <p class="mb-0">At the heart of AK International lies a dedication to your success. We go beyond the conventional, offering end-to-end services that span web development, hosting management, email solutions, and beyond. With us by your side, you can focus on what truly matters – realizing your business's full potential.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex text-white mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-chart-line fs-4"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h3>Financial Integrity</h3>
-                            <p class="mb-0">At AK International, we understand that financial integrity is the bedrock of a thriving business. That's why we offer comprehensive financial analysis and budgeting services to ensure that your organization's finances are not just managed, but optimized for success.</p>
-                        </div>
-                    </div>
-                    <div class="d-flex text-white mb-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-life-ring fs-4"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h3>Comprehensive Solutions with AK International Supply</h3>
-                            <p class="mb-0">At AK International Supply, we're your one-stop destination for all your technological and stationery needs. From cutting-edge hardware to essential software solutions network solution and everything in between, we provide a comprehensive range of products to fuel your business's success.</p>
+    <!-- Team Section -->
+    <section id="team" class="section bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Our Team Members</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="img/ceo.png" class="card-img-top" alt="CEO">
+                        <div class="card-body">
+                            <h5 class="card-title">Abul Kalam Sekh</h5>
+                            <p class="card-text">Managing Director</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-           
-        </div>
-    </div>
-    <!-- Services End -->
-
-     <!-- Services Start -->
-    <div class="container-fluid pt-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">What We Offer</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-light text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-sitemap fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Web Solutions</h3>
-                    <p class="mb-0">From crafting stunning websites to seamless hosting solutions, we offer end-to-end solutions at affordable prices.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-envelope fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Email Solution</h3>
-                    <p class="mb-0">Get professional email addresses on budget-friendly platforms with AK International. We handle hosting and maintenance so you can focus on what matters most: your business.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-building fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Web Application Solutions</h3>
-                    <p class="mb-0">From employee management to heavy equipment maintenance and attendance tracking, our tailored solutions are designed to optimize efficiency and meet your specific needs.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fas fa-desktop fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Hardware Integrity Solutions</h3>
-                    <p class="mb-0">From supply to seamless installation, we provide a wide range of hardware and network components to bolster your infrastructure.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-rocket fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Identity Solutions</h3>
-                    <p class="mb-0">yber Alif offers bespoke business cards and employee identity cards tailored to your brand. Stand out with custom designs that reflect your identity and professionalism.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fas fa-chart-line fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Finance Solutions</h3>
-                    <p class="mb-0">rom budgeting to strategic financial planning, AK International provides comprehensive finance solutions tailored to your needs.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
-    <!-- Features Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Why Choose Us!!!</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4">
-                <div class="row g-5">
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-cubes fs-4 text-white"></i>
-                        </div>
-                        <h3>Best In Industry</h3>
-                        <p class="mb-0">At AK International, we pride ourselves on being the best in the industry, offering a comprehensive range of services to fulfill all your business needs.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-percent fs-4 text-white"></i>
-                        </div>
-                        <h3>Success Rate</h3>
-                        <p class="mb-0">AK International Delivers Results, Tailored Solutions for Your Business Triumphs.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award fs-4 text-white"></i>
-                        </div>
-                        <h3>Committed to Excellence</h3>
-                        <p class="mb-0">AK International: Committed to Excellence, Driving Your Success Through Dedicated Efforts and Tailored Solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="d-block bg-primary h-100 text-center">
-                    <img class="img-fluid" src="img/feature.jpg" alt="">
-                    <div class="p-4">
-                        <p class="text-white mb-4">Welcome to AK International, where innovation meets ingenuity, and your business aspirations take flight. As the digital landscape evolves at a rapid pace, staying ahead of the curve isn't just a goal – it's a necessity. That's why we're here, to empower enterprises like yours with the tools, technologies, and expertise needed to thrive in an ever-changing world.</p>
-                        <a href="" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="row g-5">
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="far fa-smile-beam fs-4 text-white"></i>
-                        </div>
-                        <h3>Happy Client</h3>
-                        <p class="mb-0">Where Satisfying Clients is Our Standard, Ensuring Excellence in Every Service.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-tie fs-4 text-white"></i>
-                        </div>
-                        <h3>Professional Advisors</h3>
-                        <p class="mb-0">Where Professionalism Meets Expertise, Providing Insightful Guidance for Your Business's Success and Growth.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-headset fs-4 text-white"></i>
-                        </div>
-                        <h3>Support</h3>
-                        <p class="mb-0">AK International: Always Here for You. Count on Us for Unwavering Support in Every Situation, Ensuring Your Success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features Start -->
-
-
-    <!-- Quote Start -->
-    <div class="container-fluid bg-secondary px-0">
-        <div class="row g-0">
-            <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Request A Call Back Now and Experience Exceptional Service.</h1>
-                <p class="mb-4">At AK International, we prioritize your needs and strive to provide solutions that exceed expectations. Whether it's troubleshooting technical issues, seeking expert advice, or exploring new opportunities, our team is dedicated to delivering personalized assistance tailored to your unique requirements. With AK International, you can trust that every interaction will be met with professionalism, expertise, and a genuine commitment to your satisfaction. Contact us today to discover how we can support your business journey and help you achieve your goals.</p>
-                <form>
-                    <div class="row gx-3">
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                                <label for="form-floating-1">Full Name</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">Email address</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
-                                    <option selected>Financial Consultancy</option>
-                                    <option value="1">Technoligical Development</option>
-                                    <option value="2">Supply and Installation</option>
-                                </select>
-                                <label for="floatingSelect">Select A Service</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <button class="btn btn-primary w-100 h-100" type="submit">Request A Call</button>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="img/executive.jpeg" class="card-img-top" alt="Executive">
+                        <div class="card-body">
+                            <h5 class="card-title">Rishav Kumar</h5>
+                            <p class="card-text">Chief Executive</p>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="col-lg-6" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/quote.jpg" style="object-fit: cover;">
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
-
-
-    <!-- Team Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Our Team Members</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/ceo.png" alt="CEO">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-white">Abul Kalam Sekh</h3>
-                        <p class="text-white text-uppercase mb-0">Managing Director</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/executive.jpeg" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-white">Rishav Kumar</h3>
-                        <p class="text-white text-uppercase mb-0">Chife Executive</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/CRM.jpeg" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-white">Nayna Sing</h3>
-                        <p class="text-white text-uppercase mb-0">CRM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid bg-secondary p-0">
-        <div class="row g-0">
-            <div class="col-lg-6" style="min-height: 500px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" style="object-fit: cover;">
-                </div>
-            </div>
-            <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">What Say Our Client!!!</h1>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="">
-                            <div class="ps-4">
-                                <h3>Client Name</h3>
-                                <span class="text-uppercase">Profession</span>
-                            </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="img/CRM.jpeg" class="card-img-top" alt="CRM">
+                        <div class="card-body">
+                            <h5 class="card-title">Nayna Sing</h5>
+                            <p class="card-text">CRM</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+    </section>
 
-    
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="card p-4 mb-4 shadow-sm border-0" style="background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);">
+                        <h5 class="mb-3">Contact Details</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>Phone:</strong> <a href="tel:+919674304008">+91 9674304008</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:info@akint.co.in">info@akint.co.in</a></li>
+                            <li><strong>Location:</strong> Kolkata, India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-<div class="footer">
     <!-- Footer -->
-    <div class="footer">
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-secondary p-5">
-            <div class="row g-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-5 mb-4">Stay Update!!!</h1>
-                    <form class="mx-auto" style="max-width: 600px;">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-dark px-4">Sign Up</button>
-                        </div>
-                    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 AK International. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-md-end justify-content-center">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-white active" href="aki_tech.html">AKI Tech</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="container-fluid bg-dark text-secondary p-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                        <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Kolkata - 700 008, India</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@akint.co.in</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+91 9674304008</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">AK International</a>. All Rights Reserved.</p>
-        </div>
-        <!-- Footer End -->
-    </div>
+    </footer>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap @5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
-    <!-- Starfield Animation Script -->
+</script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const canvas = document.getElementById("starfield");
-        const ctx = canvas.getContext("2d");
-        let stars = [];
-        const numStars = 500;
-        let centerX, centerY;
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            centerX = canvas.width / 2;
-            centerY = canvas.height / 2;
-        }
-
-        class Star {
-            constructor() {
-                this.reset();
-            }
-            reset() {
-                this.x = Math.random() * canvas.width - centerX;
-                this.y = Math.random() * canvas.height - centerY;
-                this.z = Math.random() * canvas.width;
-                this.pz = this.z;
-            }
-            update() {
-                this.z -= 5;
-                if (this.z <= 1) {
-                    this.reset();
-                    this.z = canvas.width;
-                    this.pz = this.z;
-                }
-            }
-            draw() {
-                const sx = (this.x / this.z) * centerX + centerX;
-                const sy = (this.y / this.z) * centerY + centerY;
-                const px = (this.x / this.pz) * centerX + centerX;
-                const py = (this.y / this.pz) * centerY + centerY;
-                this.pz = this.z;
-                ctx.strokeStyle = 'white';
-                ctx.lineWidth = 1;
-                ctx.beginPath();
-                ctx.moveTo(px, py);
-                ctx.lineTo(sx, sy);
-                ctx.stroke();
-            }
-        }
-
-        function initStars() {
-            stars = [];
-            for (let i = 0; i < numStars; i++) {
-                stars.push(new Star());
-            }
-        }
-
-        function animate() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            for (let star of stars) {
-                star.update();
-                star.draw();
-            }
-            requestAnimationFrame(animate);
-        }
-
-        window.addEventListener("resize", () => {
-            resizeCanvas();
-            initStars();
-        });
-
-        resizeCanvas();
-        initStars();
-        animate();
+    // Magic mouse trail effect
+    const trailColors = ["#0055a5", "#ff1744", "#00c853", "#ffd600", "#00b8d4"];
+    let trailIndex = 0;
+    document.addEventListener('mousemove', function(e) {
+        const trail = document.createElement('div');
+        trail.style.position = 'fixed';
+        trail.style.pointerEvents = 'none';
+        trail.style.left = (e.clientX - 8) + 'px';
+        trail.style.top = (e.clientY - 8) + 'px';
+        trail.style.width = '16px';
+        trail.style.height = '16px';
+        trail.style.borderRadius = '50%';
+        trail.style.background = trailColors[trailIndex % trailColors.length];
+        trail.style.boxShadow = '0 0 16px ' + trailColors[trailIndex % trailColors.length];
+        trail.style.opacity = '0.7';
+        trail.style.transition = 'opacity 0.5s, transform 0.5s';
+        trail.style.zIndex = '9999';
+        document.body.appendChild(trail);
+        trailIndex++;
+        setTimeout(() => {
+            trail.style.opacity = '0';
+            trail.style.transform = 'scale(2)';
+            setTimeout(() => trail.remove(), 500);
+        }, 50);
+    });
     </script>
 </body>
 </html>
