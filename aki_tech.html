@@ -37,6 +37,62 @@
             margin-top: 10px;
             color: #bbb;
         }
+        /* Override list styling for navbar and footer */
+        .navbar ul li::before,
+        .footer ul li::before {
+            display: none !important;
+        }
+        .navbar ul li,
+        .footer ul li {
+            padding-left: 0 !important;
+        }
+        
+        /* Liquid ripple effect for navbar items */
+        .navbar .nav-link {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+            z-index: 0;
+        }
+        
+        .navbar .nav-link:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .navbar .nav-link span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Additional liquid effect */
+        .navbar .nav-link::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .navbar .nav-link:hover::after {
+            left: 100%;
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
@@ -50,11 +106,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="aki_tech.html">AKI Tech</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about"><span>About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services"><span>Services</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products"><span>Products</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact"><span>Contact</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="aki_tech.html"><span>AKI Tech</span></a></li>
                 </ul>
             </div>
         </div>
@@ -75,8 +131,54 @@
         </svg>
     </section>
 
+    <!-- Products Section -->
+    <section id="products" class="section bg-white">
+        <div class="container">
+            <h2 class="section-title text-center">Our Products</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 h-100">
+                        <div class="text-center mb-3"><i class="bi bi-cart3 fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Simple E-commerce Web Application</h5>
+                        <p class="card-text">A user-friendly e-commerce platform designed for small to medium businesses. Features include product catalog, shopping cart, order management, and secure payment processing.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="bi bi-check2 text-success me-2"></i>Product Management</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Shopping Cart & Checkout</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Order Tracking</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Payment Integration</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Customer Management</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="products.html#ecommerce" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-4 h-100">
+                        <div class="text-center mb-3"><i class="bi bi-boxes fs-1 text-primary"></i></div>
+                        <h5 class="card-title">Inventory Management System</h5>
+                        <p class="card-text">Comprehensive inventory management solution to track stock levels, manage suppliers, automate reordering, and generate detailed reports for better business decisions.</p>
+                        <ul class="list-unstyled mb-3">
+                            <li><i class="bi bi-check2 text-success me-2"></i>Stock Level Tracking</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Supplier Management</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Automated Reordering</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Barcode Scanning</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Analytics & Reports</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="products.html#inventory" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-outline-primary btn-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="section bg-white">
+    <section id="about" class="section bg-light">
         <div class="container">
             <h2 class="section-title text-center">About AKI Tech</h2>
             <div class="row align-items-center">
@@ -97,7 +199,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section bg-light">
+    <section id="services" class="section bg-white">
         <div class="container">
             <h2 class="section-title text-center">Our Services</h2>
             <div class="row">
@@ -157,7 +259,7 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="section bg-white">
+    <section id="team" class="section bg-light">
         <div class="container">
             <h2 class="section-title text-center">Our Team Members</h2>
             <div class="row justify-content-center">

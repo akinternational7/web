@@ -37,6 +37,63 @@
             margin-top: 10px;
             color: #bbb;
         }
+        
+        /* Override list styling for navbar and footer */
+        .navbar ul li::before,
+        .footer ul li::before {
+            display: none !important;
+        }
+        .navbar ul li,
+        .footer ul li {
+            padding-left: 0 !important;
+        }
+        
+        /* Liquid ripple effect for navbar items */
+        .navbar .nav-link {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+            z-index: 0;
+        }
+        
+        .navbar .nav-link:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .navbar .nav-link span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Additional liquid effect */
+        .navbar .nav-link::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .navbar .nav-link:hover::after {
+            left: 100%;
+        }
     </style>
 </head>
 <body>
@@ -49,12 +106,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aki_tech.html">AKI Tech</a></li>
-                        <li class="nav-item"><a class="nav-link" href="leather-products.html">Leather Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services"><span>Services</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery"><span>Gallery</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="aki_tech.html"><span>AKI Tech</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="leather-products.html"><span>Leather Products</span></a></li>
                 </ul>
             </div>
         </div>
