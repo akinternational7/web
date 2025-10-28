@@ -50,32 +50,6 @@
             padding: 1rem;
             margin: 1rem 0;
         }
-        .price-card {
-            border: 2px solid #003366;
-            border-radius: 12px;
-            position: relative;
-            overflow: hidden;
-        }
-        .price-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: #003366;
-        }
-        .popular-badge {
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            background: #003366;
-            color: white;
-            padding: 5px 20px;
-            border-radius: 0 0 10px 10px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
         
         /* Override list styling for navbar and footer */
         .navbar ul li::before,
@@ -267,73 +241,6 @@
                         <span class="badge bg-primary me-2">React</span>
                         <span class="badge bg-primary me-2">Express.js</span>
                         <span class="badge bg-primary me-2">Chart.js</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center">Pricing Plans</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
-                    <div class="card price-card h-100">
-                        <div class="card-body text-center p-4">
-                            <h4 class="card-title">E-commerce Starter</h4>
-                            <div class="my-3">
-                                <span class="h2 text-primary">₹25,000</span>
-                                <small class="text-muted">/one-time</small>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Up to 100 products</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Basic order management</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Payment gateway integration</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Mobile responsive design</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>6 months support</li>
-                            </ul>
-                            <a href="mailto:info@akint.co.in?subject=E-commerce Starter Inquiry" class="btn btn-outline-primary btn-lg">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card price-card h-100">
-                        <div class="popular-badge">Most Popular</div>
-                        <div class="card-body text-center p-4">
-                            <h4 class="card-title">Inventory Pro</h4>
-                            <div class="my-3">
-                                <span class="h2 text-primary">₹35,000</span>
-                                <small class="text-muted">/one-time</small>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Unlimited products</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Advanced analytics</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Barcode scanning</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Multi-location support</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>12 months support</li>
-                            </ul>
-                            <a href="mailto:info@akint.co.in?subject=Inventory Pro Inquiry" class="btn btn-primary btn-lg">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card price-card h-100">
-                        <div class="card-body text-center p-4">
-                            <h4 class="card-title">Custom Solution</h4>
-                            <div class="my-3">
-                                <span class="h2 text-primary">Contact</span>
-                                <small class="text-muted">/us</small>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Tailored to your needs</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Custom integrations</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Dedicated support</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Training included</li>
-                                <li class="mb-2"><i class="bi bi-check text-success me-2"></i>Ongoing maintenance</li>
-                            </ul>
-                            <a href="mailto:info@akint.co.in?subject=Custom Solution Inquiry" class="btn btn-outline-primary btn-lg">Contact Us</a>
-                        </div>
                     </div>
                 </div>
             </div>
