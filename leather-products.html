@@ -4,207 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leather Products | AK International</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/site-enhancements.css">
-    <style>
-        .footer-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #222;
-        }
-        .footer-logo img {
-            max-width: 140px;
-            height: auto;
-        }
-        .footer-nav {
-            flex: 1;
-            text-align: center;
-        }
-        .footer-nav .nav {
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-        .footer-copyright {
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
-            color: #bbb;
-        }
-    </style>
+    <link rel="shortcut icon" type="image/png" href="logo.png?v=20251110">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png?v=20251110">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png?v=20251110">
+    <link rel="apple-touch-icon" href="logo.png?v=20251110">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">AK International</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aki_tech.html">AKI Tech</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="leather-products.html">Leather Products</a></li>
-                </ul>
+            <div class="logo">
+                <img src="company-logo.png" alt="AK International Logo" class="logo-img">
+                <h1>AK International</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="https://tech.akint.co.in/" target="_blank">AKI Tech</a></li>
+                <li><a href="leather-products.html" class="active">Leather Products</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
     
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-inner text-center">
-            <img src="company-logo.png" alt="AK International Logo" class="company-logo mb-3">
-            <h1>Handcrafted Leather Products</h1>
-            <p class="lead">Premium leather jackets, handbags, purses, and belts — all handmade with care.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">View Collection</a>
+        <div class="hero-content">
+            <h1 class="hero-title">Premium <span class="highlight">Leather Products</span></h1>
+            <p class="hero-subtitle">Handcrafted Excellence</p>
+            <p class="hero-description">Premium leather jackets, handbags, purses, and belts — all handmade with care and precision for the global market.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">View Collection</a>
+                <a href="index.html#contact" class="btn btn-white">Contact Us</a>
+            </div>
         </div>
-        <!-- Decorative SVG -->
-        <svg class="hero-decor" width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="110" cy="110" r="110" fill="#ff1744" />
-            <path d="M30 150 C70 100,150 60,190 30" stroke="#fff" stroke-opacity="0.12" stroke-width="6" fill="none" stroke-linecap="round"/>
-        </svg>
     </section>
     
-    <section class="section bg-white">
+    <!-- Products Section -->
+    <section id="products" class="features">
         <div class="container">
-            <h2 class="section-title text-center">Leather Products</h2>
-            <p class="text-center">All our products are hand crafted. Please contact us for custom orders and wholesale inquiries.</p>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/ladies.jpg" class="card-img-top" alt="Ladies Leather Jacket">
-                        <div class="card-body">
-                            <h5 class="card-title">Ladies Leather Jacket</h5>
-                            <p class="card-text">Premium hand crafted leather jackets for ladies. Add your product image and details here.</p>
-                        </div>
-                    </div>
+            <h2 class="section-title">Our Leather Collection</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">All our products are hand crafted. Please contact us for custom orders and wholesale inquiries.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="img/ladies.jpg" alt="Ladies Leather Jacket" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Ladies Leather Jacket</h3>
+                    <p>Premium hand crafted leather jackets for ladies with modern styling and superior comfort.</p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <img src="leather.jpg" class="card-img-top" alt="Jents Leather Jacket">
-                        <div class="card-body">
-                            <h5 class="card-title">Jents Leather Jacket</h5>
-                            <p class="card-text">Stylish hand crafted leather jackets for men. Add your product image and details here.</p>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <img src="leather.jpg" alt="Men's Leather Jacket" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Men's Leather Jacket</h3>
+                    <p>Stylish hand crafted leather jackets for men with classic design and durable construction.</p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/ak00017.jpg" class="card-img-top" alt="Ladies Handbag">
-                        <div class="card-body">
-                            <h5 class="card-title">Ladies Handbag</h5>
-                            <p class="card-text">Elegant hand crafted leather handbags. Add your product image and details here.</p>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <img src="img/ak00017.jpg" alt="Ladies Handbag" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Ladies Handbag</h3>
+                    <p>Elegant hand crafted leather handbags with spacious interiors and refined aesthetics.</p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/purse_1.jpg" class="card-img-top" alt="Purse">
-                        <div class="card-body">
-                            <h5 class="card-title">Purse</h5>
-                            <p class="card-text">Hand crafted leather purses. Add your product image and details here.</p>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <img src="img/purse_1.jpg" alt="Leather Purse" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Leather Purse</h3>
+                    <p>Compact hand crafted leather purses perfect for everyday use and special occasions.</p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <img src="img/belt.jpg" class="card-img-top" alt="Belt">
-                        <div class="card-body">
-                            <h5 class="card-title">Belt</h5>
-                            <p class="card-text">Durable hand crafted leather belts. Add your product image and details here.</p>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <img src="img/belt.jpg" alt="Leather Belt" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Leather Belt</h3>
+                    <p>Durable hand crafted leather belts with premium buckles and long-lasting quality.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="bag.jpg" alt="Leather Bag" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Leather Accessories</h3>
+                    <p>Various handcrafted leather accessories including bags, wallets, and custom items.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer bg-dark text-white text-center py-3">
-        <div class="container py-4">
-            <div class="footer-row">
-                <div class="footer-logo">
-                    <img src="company-logo.png" alt="AK International Logo">
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Interested in Our Leather Products?</h2>
+            <p>Contact us for custom orders, wholesale inquiries, and bulk purchases.</p>
+            <a href="index.html#contact" class="btn btn-white">Get Quote Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="company-logo.png" alt="AK International Logo" class="logo-img">
+                        <h3>AK International</h3>
+                    </div>
+                    <p>Your trusted partner in global import & export solutions and premium handcrafted leather products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="footer-nav">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="index.html#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="index.html#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="index.html#gallery">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="index.html#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="aki_tech.html">AKI Tech</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2 active" href="leather-products.html">Leather Products</a></li>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products & Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Import Solutions</a></li>
+                        <li><a href="index.html#services">Export Solutions</a></li>
+                        <li><a href="leather-products.html">Leather Products</a></li>
+                        <li><a href="https://tech.akint.co.in/" target="_blank">AKI Tech</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kolkata, India</li>
+                        <li><i class="fas fa-envelope"></i> info@akint.co.in</li>
+                        <li><i class="fas fa-phone"></i> +91 9674304008</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-copyright">
-                &copy; 2025 AK International. All rights reserved.
+            <div class="footer-bottom">
+                <p>&copy; 2025 AK International. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-    // Scroll reveal animations
-    const reveals = document.querySelectorAll('.section, .card, .gallery-img');
-    function revealOnScroll() {
-        reveals.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            if (elementTop < windowHeight - 100) {
-                element.classList.add('active');
-            }
-        });
-    }
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll();
-    
-    // Card mouse tracking
-    document.querySelectorAll('.card').forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            card.style.setProperty('--mouse-x', x + '%');
-            card.style.setProperty('--mouse-y', y + '%');
-        });
-    });
-    
-    // Magic mouse trail effect
-    const trailColors = ["#0055a5", "#ff1744", "#00c853", "#ffd600", "#00b8d4", "#9c27b0"];
-    let trailIndex = 0;
-    document.addEventListener('mousemove', function(e) {
-        if(Math.random() > 0.7) {
-            const trail = document.createElement('div');
-            trail.style.position = 'fixed';
-            trail.style.pointerEvents = 'none';
-            trail.style.left = (e.clientX - 10) + 'px';
-            trail.style.top = (e.clientY - 10) + 'px';
-            trail.style.width = '20px';
-            trail.style.height = '20px';
-            trail.style.borderRadius = '50%';
-            trail.style.background = trailColors[trailIndex % trailColors.length];
-            trail.style.boxShadow = '0 0 20px ' + trailColors[trailIndex % trailColors.length];
-            trail.style.opacity = '0.8';
-            trail.style.transition = 'opacity 0.6s, transform 0.6s';
-            trail.style.zIndex = '9999';
-            document.body.appendChild(trail);
-            trailIndex++;
-            setTimeout(() => {
-                trail.style.opacity = '0';
-                trail.style.transform = 'scale(2.5)';
-                setTimeout(() => trail.remove(), 600);
-            }, 50);
-        }
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
