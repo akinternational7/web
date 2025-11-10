@@ -3,351 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK International | Import & Export Solutions</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/site-enhancements.css">
-    <style>
-        .footer-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #222;
-        }
-        .footer-logo img {
-            max-width: 140px;
-            height: auto;
-        }
-        .footer-nav {
-            flex: 1;
-            text-align: center;
-        }
-        .footer-nav .nav {
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-        .footer-copyright {
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
-            color: #bbb;
-        }
-        
-        /* Override list styling for navbar and footer */
-        .navbar ul li::before,
-        .footer ul li::before {
-            display: none !important;
-        }
-        .navbar ul li,
-        .footer ul li {
-            padding-left: 0 !important;
-        }
-        
-        /* Liquid ripple effect for navbar items */
-        .navbar .nav-link {
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .navbar .nav-link::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            transition: width 0.6s ease, height 0.6s ease;
-            z-index: 0;
-        }
-        
-        .navbar .nav-link:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-        
-        .navbar .nav-link span {
-            position: relative;
-            z-index: 1;
-        }
-        
-        /* Additional liquid effect */
-        .navbar .nav-link::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-            transition: left 0.5s;
-        }
-        
-        .navbar .nav-link:hover::after {
-            left: 100%;
-        }
-    </style>
+    <meta name="description" content="AK International - Import & Export Solutions">
+    <title>AK International - Home</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png?v=20251110">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png?v=20251110">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png?v=20251110">
+    <link rel="apple-touch-icon" href="logo.png?v=20251110">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">AK International</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services"><span>Services</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery"><span>Gallery</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
-                    <li class="nav-item">
-  <a class="nav-link" href="https://tech.akint.co.in/" target="_blank">
-    <span>AKI Tech</span>
-  </a>
-</li>
-                        <li class="nav-item"><a class="nav-link" href="leather-products.html"><span>Leather Products</span></a></li>
-                </ul>
+            <div class="logo">
+                <img src="company-logo.png" alt="AK International Logo" class="logo-img">
+                <h1>AK International</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://tech.akint.co.in/" target="_blank">AKI Tech</a></li>
+                <li><a href="leather-products.html">Leather Products</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-inner text-center">
-            <img src="company-logo.png" alt="akinternation Logo" class="company-logo mb-3">
-            <h1>Welcome to AK International</h1>
-            <p class="lead">Your trusted partner in global import & export solutions — handcrafted service, global reach.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="highlight">AK International</span></h1>
+            <p class="hero-subtitle">Your Trusted Partner in Global Trade</p>
+            <p class="hero-description">Connecting businesses worldwide with seamless import & export solutions — handcrafted service, global reach.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-white">Get in Touch</a>
+            </div>
         </div>
-        <!-- Decorative SVG -->
-        <svg class="hero-decor" width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="110" cy="110" r="110" fill="#0055a5" />
-            <path d="M30 150 C70 100,150 60,190 30" stroke="#fff" stroke-opacity="0.12" stroke-width="6" fill="none" stroke-linecap="round"/>
-        </svg>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section bg-white">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
-            <h2 class="section-title text-center">About Us</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p>AK International is a leading import and export company, connecting businesses worldwide with seamless logistics, compliance, and market expertise. Our mission is to simplify global trade and empower our clients to grow beyond borders.</p>
-                    <ul>
-                        <li>Global network of partners</li>
-                        <li>Expertise in international regulations</li>
-                        <li>Reliable and secure logistics</li>
-                        <li>Customer-focused approach</li>
-                    </ul>
+            <h2 class="section-title">Why Choose AK International?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-globe feature-icon"></i>
+                    <h3>Global Network</h3>
+                    <p>Worldwide network of trusted partners ensuring seamless international trade operations.</p>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Global Trade">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Secure & Compliant</h3>
+                    <p>Full compliance with international regulations and secure logistics for your peace of mind.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-handshake feature-icon"></i>
+                    <h3>Trusted Expertise</h3>
+                    <p>Years of experience in international trade with deep market knowledge and industry expertise.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset feature-icon"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to ensure your operations run smoothly at all times.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section bg-light">
+    <section class="services-preview">
         <div class="container">
-            <h2 class="section-title text-center">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card p-4 mb-4">
-                        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Import Solutions">
-                        <div class="card-body">
-                            <h5 class="card-title">Import Solutions</h5>
-                            <p class="card-text">We handle all aspects of importing, from sourcing to delivery, ensuring compliance and efficiency every step of the way.</p>
-                        </div>
-                    </div>
+            <h2 class="section-title">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-truck-loading service-icon"></i>
+                    <h3>Import Solutions</h3>
+                    <p>We handle all aspects of importing, from sourcing to delivery, ensuring compliance and efficiency every step of the way.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-4 mb-4">
-                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Service">
-                        <div class="card-body">
-                            <h5 class="card-title">Export Solutions</h5>
-                            <p class="card-text">Expand your reach with our export expertise, from documentation to logistics, making global markets accessible and profitable.</p>
-                        </div>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-ship service-icon"></i>
+                    <h3>Export Solutions</h3>
+                    <p>Expand your reach with our export expertise, from documentation to logistics, making global markets accessible and profitable.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-4 mb-4">
-                        <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Service">
-                        <div class="card-body">
-                            <h5 class="card-title">Consulting & Compliance</h5>
-                            <p class="card-text">Our experts guide you through international regulations, risk management, and market entry strategies for smooth operations.</p>
-                        </div>
-                    </div>
+                <div class="service-card">
+                    <i class="fas fa-clipboard-check service-icon"></i>
+                    <h3>Consulting & Compliance</h3>
+                    <p>Our experts guide you through international regulations, risk management, and market entry strategies for smooth operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number">500+</h3>
+                    <p>Successful Shipments</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">200+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">50+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">10+</h3>
+                    <p>Years Experience</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="section bg-white">
+    <section id="gallery" class="features">
         <div class="container">
-            <h2 class="section-title text-center">Gallery</h2>
-            <div class="row g-2">
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="leather.jpg" class="img-fluid rounded shadow gallery-img" alt="Leather Product">
+            <h2 class="section-title">Our Products Gallery</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="leather.jpg" class="gallery-img" alt="Leather Product" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Premium Leather</h3>
+                    <p>High-quality leather products sourced from trusted manufacturers.</p>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow gallery-img" alt="Vehicle Spare Parts">
+                <div class="feature-card">
+                    <img src="parts.jpg" class="gallery-img" alt="Vehicle Parts" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Vehicle Parts</h3>
+                    <p>Automotive components and spare parts for various vehicle models.</p>
                 </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="parts.jpg" class="img-fluid rounded shadow gallery-img" alt="Leather Belt">
-                </div>
-                <div class="col-6 col-md-3 mb-4">
-                    <img src="bag.jpg" class="img-fluid rounded shadow gallery-img" alt="Leather Production">
+                <div class="feature-card">
+                    <img src="bag.jpg" class="gallery-img" alt="Leather Bags" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                    <h3>Leather Accessories</h3>
+                    <p>Handcrafted leather bags and accessories for global markets.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="features">
         <div class="container">
-            <h2 class="section-title text-center">Contact Us</h2>
-            <div class="row justify-content-center mb-4">
-                <div class="col-md-8">
-                    <div class="card p-4 mb-4 shadow-sm border-0" style="background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);">
-                        <h3 class="mb-4 text-center" style="color:#003366;"><i class="bi bi-envelope-fill me-2"></i>Contact Us</h3>
-                        <div class="row g-3 align-items-center">
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="me-2" style="font-size:1.5rem;color:#0055a5;"><i class="bi bi-telephone-fill"></i></span>
-                                    <div>
-                                        <div><strong>KSA:</strong> <a href="tel:+966564118034">+966 564118034</a></div>
-                                        <div><strong>India:</strong> <a href="tel:+919674304008">+91 9674304008</a></div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="me-2" style="font-size:1.5rem;color:#ff1744;"><i class="bi bi-envelope-fill"></i></span>
-                                    <div>
-                                        <strong>Email:</strong> <a href="mailto:info@akint.co.in">info@akint.co.in</a>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <span class="me-2" style="font-size:1.5rem;color:#00c853;"><i class="bi bi-geo-alt-fill"></i></span>
-                                    <div>
-                                        <strong>Location:</strong> Kolkata, India
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 text-center">
-                                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Contact" class="img-fluid rounded shadow" style="max-width:180px;">
-                            </div>
-                        </div>
-                    </div>
+            <h2 class="section-title">Contact Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-phone feature-icon"></i>
+                    <h3>Call Us</h3>
+                    <p><strong>KSA:</strong> <a href="tel:+966564118034">+966 564118034</a></p>
+                    <p><strong>India:</strong> <a href="tel:+919674304008">+91 9674304008</a></p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-envelope feature-icon"></i>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@akint.co.in">info@akint.co.in</a></p>
+                    <p>We'll respond within 24 hours</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt feature-icon"></i>
+                    <h3>Visit Us</h3>
+                    <p>Kolkata, India</p>
+                    <p>Open for business meetings</p>
                 </div>
             </div>
-            <!-- Contact form removed as requested -->
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Expand Your Global Reach?</h2>
+            <p>Let's discuss how AK International can help you achieve your import/export goals.</p>
+            <a href="#contact" class="btn btn-white">Contact Us Today</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-3">
-        <div class="container py-4">
-            <div class="footer-row">
-                <div class="footer-logo">
-                    <img src="company-logo.png" alt="AK International Logo">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="company-logo.png" alt="AK International Logo" class="logo-img">
+                        <h3>AK International</h3>
+                    </div>
+                    <p>Your trusted partner in global import & export solutions. Connecting businesses worldwide with seamless logistics and market expertise.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="footer-nav">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="#gallery">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="#contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="aki_tech.html">AKI Tech</a></li>
-                        <li class="nav-item"><a class="nav-link text-white px-2" href="leather-products.html">Leather Products</a></li>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Import Solutions</a></li>
+                        <li><a href="#services">Export Solutions</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                        <li><a href="https://tech.akint.co.in/" target="_blank">AKI Tech</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kolkata, India</li>
+                        <li><i class="fas fa-envelope"></i> info@akint.co.in</li>
+                        <li><i class="fas fa-phone"></i> +91 9674304008</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-copyright">
-                &copy; 2025 AK International. All rights reserved.
+            <div class="footer-bottom">
+                <p>&copy; 2025 AK International. All rights reserved.</p>
             </div>
         </div>
     </footer>
     <!-- AKI Tech section removed, now links to aki_tech.html -->
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <script>
-    // Scroll progress indicator
-    window.addEventListener('scroll', function() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        document.body.style.setProperty('--scroll-progress', scrolled + '%');
-        if(document.body.querySelector('::before')) {
-            document.body.style.setProperty('width', scrolled + '%', 'important');
-        }
-    });
-    
-    // Scroll reveal animations
-    const reveals = document.querySelectorAll('.section, .card, .gallery-img');
-    function revealOnScroll() {
-        reveals.forEach(element => {
-            const elementTop = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            if (elementTop < windowHeight - 100) {
-                element.classList.add('active');
-            }
-        });
-    }
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll();
-    
-    // Card mouse tracking for gradient effect
-    document.querySelectorAll('.card').forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = ((e.clientX - rect.left) / rect.width) * 100;
-            const y = ((e.clientY - rect.top) / rect.height) * 100;
-            card.style.setProperty('--mouse-x', x + '%');
-            card.style.setProperty('--mouse-y', y + '%');
-        });
-    });
-    
-    // Magic mouse trail effect with enhanced colors
-    const trailColors = ["#0055a5", "#ff1744", "#00c853", "#ffd600", "#00b8d4", "#9c27b0"];
-    let trailIndex = 0;
-    document.addEventListener('mousemove', function(e) {
-        if(Math.random() > 0.7) { // Reduce trail frequency for performance
-            const trail = document.createElement('div');
-            trail.style.position = 'fixed';
-            trail.style.pointerEvents = 'none';
-            trail.style.left = (e.clientX - 10) + 'px';
-            trail.style.top = (e.clientY - 10) + 'px';
-            trail.style.width = '20px';
-            trail.style.height = '20px';
-            trail.style.borderRadius = '50%';
-            trail.style.background = trailColors[trailIndex % trailColors.length];
-            trail.style.boxShadow = '0 0 20px ' + trailColors[trailIndex % trailColors.length];
-            trail.style.opacity = '0.8';
-            trail.style.transition = 'opacity 0.6s, transform 0.6s';
-            trail.style.zIndex = '9999';
-            document.body.appendChild(trail);
-            trailIndex++;
-            setTimeout(() => {
-                trail.style.opacity = '0';
-                trail.style.transform = 'scale(2.5)';
-                setTimeout(() => trail.remove(), 600);
-            }, 50);
-        }
-    });
-    </script>
 </body>
 </html>
